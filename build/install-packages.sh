@@ -99,7 +99,6 @@ openssh-server
 perl
 perl-base
 perl-modules
-pip
 postgresql-client
 psmisc
 python-pip
@@ -120,7 +119,6 @@ traceroute
 ttf-dejavu-core
 unzip
 uuid-dev
-virtualenv
 wget
 zip
 "

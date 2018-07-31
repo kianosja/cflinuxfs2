@@ -171,10 +171,9 @@ chmod 755 /usr/bin/om-linux
 curl -k -s -Lo /usr/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
 chmod 755 /usr/bin/jq
 
-#curl -k -s -Lo awscli-bundle.zip https://s3.amazonaws.com/aws-cli/awscli-bundle.zip
-#unzip awscli-bundle.zip
-#./awscli-bundle/install -i /usr/local/aws -b /usr/bin/aws
-#rm -r -f awscli-bundle
+pip install awscli --upgrade --user
+
+aws --version
  
 #
 ######

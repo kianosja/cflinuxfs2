@@ -48,7 +48,7 @@ gnupg-curl
 gsfonts
 imagemagick
 iputils-arping
-jq
+#jq    # Old version with no -S option
 krb5-user
 laptop-detect
 ldap-utils
@@ -166,6 +166,9 @@ chmod 755 /usr/bin/govc
 VER=`curl -L -k -s https://github.com/pivotal-cf/om/releases/latest | grep "<title>Release" | awk '{ print $2 }'`
 curl -k -s -Lo /usr/bin/om-linux https://github.com/pivotal-cf/om/releases/download/${VER}/om-linux
 chmod 755 /usr/bin/om-linux
+
+curl -k -s -Lo /usr/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
+chmod 755 /usr/bin/jq
  
 #
 ######

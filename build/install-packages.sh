@@ -48,7 +48,6 @@ gnupg-curl
 gsfonts
 imagemagick
 iputils-arping
-#jq    # Old version with no -S option
 krb5-user
 laptop-detect
 ldap-utils

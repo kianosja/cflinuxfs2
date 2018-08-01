@@ -24,3 +24,8 @@ popd
 
 rm -rf /tmp/ruby-build*
 rm -f /usr/lib/ruby/gems/2.3.0/cache/*
+
+# Install uaa-cli
+
+gem install cf-uaac
+

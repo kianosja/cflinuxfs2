@@ -159,8 +159,9 @@ VER=`curl -k -s https://s3.amazonaws.com/bosh-cli-artifacts/cli-current-version`
 curl -k -s -Lo /usr/bin/bosh https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${VER}-linux-amd64
 chmod 755 /usr/bin/bosh
 
-VER=`curl -L -k -s https://github.com/vmware/govmomi/releases/latest | grep "<title>Release" | awk '{ print $2 }'`
-curl -k -s -Lo /usr/bin/govc.gz https://github.com/vmware/govmomi/releases/download/${VER}/govc_linux_amd64.gz
+#VER=`curl -L -k -s https://github.com/vmware/govmomi/releases/latest | grep "<title>Release" | awk '{ print $2 }'`
+#curl -k -s -Lo /usr/bin/govc.gz https://github.com/vmware/govmomi/releases/download/${VER}/govc_linux_amd64.gz
+curl -k -s -Lo /usr/bin/govc.gz https://github.com/vmware/govmomi/releases/download/v0.15.0/govc_linux_amd64.gz
 gzip -d /usr/bin/govc.gz
 chmod 755 /usr/bin/govc
 

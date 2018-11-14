@@ -177,6 +177,7 @@ unzip awscli-bundle.zip
 ./awscli-bundle/install -i /usr/local/aws -b /usr/bin/aws
 rm -r -f awscli-bundle
 
+pip install ruamel.yml 
 #pip install awscli --upgrade --user
 #aws --version
  

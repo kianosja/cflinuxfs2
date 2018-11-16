@@ -156,6 +156,7 @@ wget --no-check-certificate -q -O /usr/bin/mc https://dl.minio.io/client/mc/rele
 chmod 755 /usr/bin/mc
 
 VER=`curl -k -s https://s3.amazonaws.com/bosh-cli-artifacts/cli-current-version`
+VER="5.4.0"
 curl -k -s -Lo /usr/bin/bosh https://s3.amazonaws.com/bosh-cli-artifacts/bosh-cli-${VER}-linux-amd64
 chmod 755 /usr/bin/bosh
 

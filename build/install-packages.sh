@@ -167,6 +167,7 @@ gzip -d /usr/bin/govc.gz
 chmod 755 /usr/bin/govc
 
 VER=`curl -L -k -s https://github.com/pivotal-cf/om/releases/latest | grep "<title>Release" | awk '{ print $2 }'`
+VER="0.42.0"
 curl -k -s -Lo /usr/bin/om-linux https://github.com/pivotal-cf/om/releases/download/${VER}/om-linux
 chmod 755 /usr/bin/om-linux
 

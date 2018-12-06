@@ -17,4 +17,3 @@ RUN chown vcap /home/vcap/app
 RUN ln -s /home/vcap/app /app
 
 RUN rm -rf /tmp/*
-
